@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>302</width>
+    <height>334</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="setBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>80</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/set.png</normaloff>:/assert/btn/set.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>203</y>
+     <width>151</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    /* 设置圆角矩形，半径为8px */
+    border-radius: 8px;
+    /* 设置边框 */
+    border: 1px solid #b3d1ff;
+    /* 设置浅蓝色背景 */
+    background-color: #e6f0ff;
+    /* 设置内边距，让文字不紧贴边框 */
+    padding: 2px 8px;
+    /* 设置字体为楷体 */
+    font-family: &quot;楷体&quot;, &quot;KaiTi&quot;, serif;
+    /* 设置字体大小 */
+    font-size: 14px;
+    font-weight: bold;
+    color: #B24DFF;
+}
+
+/* 可以添加焦点状态的样式 */
+QLineEdit:focus {
+    border-color: #7eb3ff;
+    background-color: #cce0ff;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>83</y>
+     <width>91</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:red</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chatBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>110</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/chat.png</normaloff>:/assert/btn/chat.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="conLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>23</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    /* 设置字体为楷体，兼容不同系统 */
+    font-family: &quot;楷体&quot;, &quot;KaiTi&quot;, &quot;STKaiti&quot;, serif;
+    /* 字体颜色设置为 #83AEE9 */
+    color: #3ba5ff;
+    /* 可选：设置字体大小 */
+    font-size: 16px;
+	/*;*/font-weight: bold;
+}</string>
+   </property>
+   <property name="text">
+    <string>我我我我我我我我我我我我我我我</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="douBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>140</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/dou.png</normaloff>:/assert/btn/dou.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sedBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>200</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/sed.png</normaloff>:/assert/btn/sed.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="moreBtn">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>170</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/more.png</normaloff>:/assert/btn/more.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stuBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>搜题模式</string>
+   </property>
+   <property name="toolTipDuration">
+    <number>-1</number>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/topic.png</normaloff>:/assert/btn/topic.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cutBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>140</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>截屏 Alt + X</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/cut.png</normaloff>:/assert/btn/cut.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="alarmBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>170</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>闹钟</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/alarm.png</normaloff>:/assert/btn/alarm.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="codeBtn">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>31</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>编码模式</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/code.png</normaloff>:/assert/btn/code.png</iconset>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>200</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit {
+    /* 设置圆角矩形，半径为8px */
+    border-radius: 8px;
+    /* 设置边框 */
+    border: 1px solid #b3d1ff;
+    /* 设置浅蓝色背景 */
+    background-color: #e6f0ff;
+    /* 设置内边距，让文字不紧贴边框 */
+    padding: 2px 8px;
+    /* 设置字体为楷体 */
+    font-family: &quot;楷体&quot;, &quot;KaiTi&quot;, serif;
+    /* 设置字体大小 */
+    font-size: 14px;
+    font-weight: bold;
+    color: #B24DFF;
+}
+
+/* 可以添加焦点状态的样式 */
+QTextEdit:focus {
+    border-color: #7eb3ff;
+    background-color: #cce0ff;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="sedBtn_2">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>217</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/sed.png</normaloff>:/assert/btn/sed.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="copyBth">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>复制内容</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/copy.png</normaloff>:/assert/btn/copy.png</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeAlarmBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>140</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>关闭闹钟</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    /* 基础样式：无边框、透明背景 */
+	border-radius: 15px;
+    border: none;
+    background-color: transparent;
+    /* 可根据需要设置内边距，调整按钮大小 */
+    padding: 6px 12px;
+}
+
+/* 鼠标悬停状态：浅蓝色背景 */
+QPushButton:hover {
+    background-color: #ACD9FE;
+    /* 可选：添加轻微圆角增强视觉效果 */
+    border-radius: 4px;
+}
+
+/* 鼠标点击状态：显示边框 */
+QPushButton:pressed {
+    border: 1px solid #7BAFE5;
+	
+    background-color: #ACD9FE;
+    border-radius: 4px;
+}
+
+/* 可选：焦点状态样式 */
+QPushButton:focus {
+    outline: none; /* 去除默认焦点虚线 */
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="assert.qrc">
+     <normaloff>:/assert/btn/alarm.png</normaloff>:/assert/btn/alarm.png</iconset>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assert.qrc"/>
+ </resources>
+ <connections/>
+</ui>
